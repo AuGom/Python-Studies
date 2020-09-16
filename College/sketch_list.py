@@ -17,3 +17,8 @@ except IOError:
     print("Arquivo nao existe")
 print(man)
 print(other)
+
+with open('man_data.txt', 'w') as man_file:
+    print(man, file=man_file)
+with open('other_man_data.txt', 'w') as other_man_file:
+    print(other, file=other_man_file)
