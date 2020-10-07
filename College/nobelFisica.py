@@ -1,0 +1,27 @@
+NobelFisica = {1901: "Wilhelm Conrad Röntgen", 1902: "Hendrik Antoon Lorentz e Pieter Zeeman", 1903: "Antoine-Henri Becquerel, Pierre Curie e Marie Curie", 1904: "John William Strutt", 1905: "Philipp Eduard Anton von Lenard", 1906: "Joseph John Thomson", 1907: "Albert Abraham Michelson", 1908: "Gabriel Lippmann", 1909: "Guglielmo Marconi  e Karl Ferdinand Braun", 1910: "Johannes Diderik van der Waals",
+               1911: "Wilhelm Carl Werner Otto Fritz Franz Wien", 1912: "Nils Gustaf Dalén", 1913: "Heike Kamerlingh Onnes", 1914: "Max von Laue", 1915: "William Henry Bragg e William Lawrence Bragg", 1916: "Não houve premiação-Primeira Guerra Mundial", 1917: "Charles Glover Barkla", 1918: "Max Karl Ernst Ludwig Planck", 1919: "Johannes Stark", 1920: "Charles Edouard Guillaume"}
+
+print(NobelFisica[1915])
+d = {}
+d.update(NobelFisica)
+print(d)
+print(d[1903])
+d.clear()
+print(d)
+d.update(NobelFisica)
+d.copy()
+x = d.copy()
+print(x)
+print(d.get(1903, "nao tem"))
+print(d.get(1921, "nao tem"))
+print(d.get(1923))
+print(d.items())
+print(x.items())
+print(d.keys())
+print(d.pop(1920, "nao existe"))
+print(d)
+print(d.pop(1923, "nao existe"))
+d.popitem()
+d.setdefault(1921, "Albert Einstein")
+print(d)
+print(d.values())
